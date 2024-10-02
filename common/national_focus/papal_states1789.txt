@@ -52,7 +52,7 @@ focus_tree = {
 	focus = {
 		id = PAP_spectators_of_the_revolution
 		icon = GFX_goal_generic_military_sphere
-		x = 5
+		x = 28
 		y = 0
     allow_branch = { has_start_date > 1789.1.1
  has_start_date < 1836.1.1 }
@@ -667,10 +667,6 @@ focus = {
 
 
 
-
-
-
-
 focus = {
 		id = PAP_the_new_pope
 		icon = GFX_goal_generic_military_sphere
@@ -678,9 +674,9 @@ focus = {
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
 		x = 0
-		y = 4
+		y = 1
 
-		relative_position_id = PAP_reliberation
+		relative_position_id = PAP_temporary_french_government
 
 		cost = 10
 
@@ -697,7 +693,7 @@ focus = {
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {	
@@ -1190,13 +1186,13 @@ focus = {
 
 
 focus = {
-		id = PAP_maintain_catholic_control_over_europe
+		id = PAP_maintain_catholic_control_over_europe 
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = PAP_dawn_of_a_new_decade }
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
 		x = 0
-		y = 2
+		y = 1
 
 		relative_position_id = PAP_dawn_of_a_new_decade
 
@@ -1207,7 +1203,6 @@ focus = {
 		}
 
 		available = {
-
 		}
 
 		bypass = {
@@ -1709,13 +1704,15 @@ focus = {
 		}
 	}
 
+
+
 focus = {
 		id = PAP_19th_ceuntry_indulstrialisation
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = PAP_dawn_of_a_new_decade }
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
-		x = 8
+		x = -18
 		y = 1
 
 		relative_position_id = PAP_dawn_of_a_new_decade
@@ -1727,7 +1724,6 @@ focus = {
 		}
 
 		available = {
-
 		}
 
 		bypass = {
@@ -2011,7 +2007,7 @@ focus = {
 		prerequisite = { focus = PAP_dawn_of_a_new_decade }
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
-		x = 6
+		x = 12
 		y = 1
 
 		relative_position_id = PAP_dawn_of_a_new_decade
@@ -2023,7 +2019,6 @@ focus = {
 		}
 
 		available = {
-
 		}
 
 		bypass = {
@@ -2037,6 +2032,11 @@ focus = {
 		completion_reward = {	
 		}
 	}
+
+
+
+
+
 
 focus = {
 		id = PAP_modern_military
@@ -2247,15 +2247,13 @@ focus = {
 
 
 
-
-
 focus = {
-		id = PAP_the_minds_of_vatican
+		id = PAP__the_minds_of_vatican
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = PAP_dawn_of_a_new_decade }
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
-		x = 12
+		x = 25
 		y = 1
 
 		relative_position_id = PAP_dawn_of_a_new_decade
@@ -2267,7 +2265,6 @@ focus = {
 		}
 
 		available = {
-
 		}
 
 		bypass = {
@@ -2281,6 +2278,11 @@ focus = {
 		completion_reward = {	
 		}
 	}
+
+
+
+
+
 
 focus = {
 		id = PAP_foreign_designs
