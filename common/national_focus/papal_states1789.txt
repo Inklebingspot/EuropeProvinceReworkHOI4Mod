@@ -269,6 +269,40 @@ focus = {
 		}
 	}
 
+focus = {
+		id = PAP_temporary_french_government
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = PAP_seek_for_peace }
+    allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		x = 0
+		y = 2
+
+		relative_position_id = PAP_seek_for_peace
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+
+		bypass = { 
+		}
+
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {	
+		}
+	}
+
 
 
 focus = {
@@ -315,39 +349,7 @@ focus = {
 
 
 
-focus = {
-		id = PAP_temporary_french_government
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = PAP_seek_for_peace }
-    allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
-		x = 0
-		y = 2
 
-		relative_position_id = PAP_seek_for_peace
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		}
-
-		bypass = { 
-		}
-
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {	
-		}
-	}
 
 
 
@@ -888,38 +890,17 @@ focus = {
 
 
 
-focus = {
-		id = PAP_spectators_of_the_revolution
-		icon = GFX_goal_generic_construction
-                allow_branch = { has_start_date > 1789.1.1
-                has_start_date < 1836.1.1 }
-		x = 10
+	focus = {
+		id = focus = PAP_spectators_of_the_revolution 
+		icon = GFX_focus_generic_truck
+		x = 8
 		y = 0
-
 		relative_position_id = PAP_1st_disestablishment
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
+		cost = 5
 		available = {
-
 		}
 
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 25
-			}
+		completion_reward = {	
 		}
 	}
 
