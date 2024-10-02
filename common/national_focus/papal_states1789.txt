@@ -356,8 +356,8 @@ focus = {
 focus = {
 		id = PAP_dawn_of_a_new_decade
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = PAP_control_french_assets }
-		prerequisite = { focus = PAP_nationalised_church }
+		prerequisite = { focus = PAP_nationalised_church focus = PAP_control_french_assets }
+
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
 		x = -2
@@ -685,16 +685,17 @@ focus = {
 		}
 
 		available = {
-                
 		}
 
-		bypass = {
+		bypass = { 
+		}
+
 
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {	
 		}
@@ -1186,23 +1187,24 @@ focus = {
 
 
 focus = {
-		id = PAP_maintain_catholic_control_over_europe 
+		id = PAP_maintain_catholic_control_over_europe
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = PAP_dawn_of_a_new_decade }
     allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
-		x = 0
+		x = 1
 		y = 1
 
 		relative_position_id = PAP_dawn_of_a_new_decade
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
+
 		}
 
 		bypass = {
@@ -1214,6 +1216,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {	
+                 
+
 		}
 	}
 
