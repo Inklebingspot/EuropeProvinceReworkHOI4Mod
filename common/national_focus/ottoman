@@ -1,0 +1,180 @@
+focus_tree = {
+	id = ottoman_Focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = OTO
+		}
+	}
+	
+	default = no
+
+
+		focus = {
+		id = ottoman_the_eastern_colony
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 1
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		
+		}
+	}
+
+
+		focus = {
+		id = ottoman_develop_the_colony
+		icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = ottoman_the_eastern_colony
+		x = -3
+		y = 1
+		prerequisite = {
+		focus =	ottoman_the_eastern_colony
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+
+		focus = {
+		id = ottoman_pepper_production
+		icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = ottoman_develop_the_colony
+		x = -2
+		y = 2
+		prerequisite = {
+		focus =	ottoman_develop_the_colony
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+
+		focus = {
+		id = ottoman_rubber_production
+		icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = ottoman_develop_the_colony
+		x = 2
+		y = 2
+		prerequisite = {
+		focus =	ottoman_develop_the_colony
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+
+		focus = {
+		id = ottoman_expand_focus
+		icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = ottoman_develop_the_colony
+		x = 0
+		y = 4
+		prerequisite = {
+		focus =	ottoman_develop_the_colony
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+
