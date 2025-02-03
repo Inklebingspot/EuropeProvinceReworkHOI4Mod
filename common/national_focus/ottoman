@@ -20,8 +20,8 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1800.1.1 }
-		x = 4
-		y = 1
+		x = 1
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -39,5 +39,127 @@ allow_branch = { has_start_date > 1789.1.1
 		available_if_capitulated = no
 		
 		completion_reward = {
+    add_political_power = 100
+		}
+	}
+
+
+		focus = {
+		id = ottoman_1789_focus_2
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {
+		focus =	ottoman_1789_focus_1
+		}
+		x = -2
+		y = 1
+    relative_position_id = ottoman_1789_focus_1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+    add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = ottoman_1789_focus_3
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {
+		focus =	ottoman_1789_focus_2
+		}
+		x = -2
+		y = 1
+    relative_position_id = ottoman_1789_focus_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+    add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = ottoman_1789_focus_4
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {
+		focus =	ottoman_1789_focus_2
+		}
+		x = 2
+		y = 1
+    relative_position_id = ottoman_1789_focus_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+    add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = ottoman_1789_focus_5
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {
+		focus =	ottoman_1789_focus_2
+		}
+		x = 0
+		y = 2
+    relative_position_id = ottoman_1789_focus_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+    add_political_power = 100
 		}
 	}
